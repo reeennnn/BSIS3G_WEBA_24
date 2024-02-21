@@ -1,0 +1,15 @@
+
+<?php
+
+class App
+{
+    public function __construct()
+    {
+        show explode('/', $_GET(['url']));
+    }
+    private function splitUrl()
+    {
+        $url = explode ('/', $_GET(['url']));
+        show($url);
+    }
+}
