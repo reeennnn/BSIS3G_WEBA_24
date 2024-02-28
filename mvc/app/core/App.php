@@ -38,6 +38,7 @@ public function __construct()
         if (isset($_GET['url'])){
 
             $url = explode('/', trim($_GET['url'], '/')); 
+            return $url;
         }
     }
 }
